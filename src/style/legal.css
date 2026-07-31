@@ -1,0 +1,90 @@
+.legal {
+    padding: 70px 0 100px;
+}
+
+section.legal {
+    margin: 0;
+
+}
+
+.legal__back {
+    display: inline-block;
+    margin-bottom: 36px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .7);
+    transition: color .2s ease;
+}
+
+.legal__back:hover {
+    color: #fff;
+}
+
+.legal h1 {
+    font-size: 34px;
+    max-width: 700px;
+    margin-bottom: 10px;
+}
+
+.legal__updated {
+    font-size: 15px;
+    color: rgba(255, 255, 255, .55);
+    margin-bottom: 46px;
+}
+
+.legal__intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .85);
+    max-width: 760px;
+    margin-bottom: 46px;
+}
+
+.legal article {
+    max-width: 760px;
+}
+
+.legal h2 {
+    font-size: 22px;
+    margin: 40px 0 14px;
+}
+
+.legal h2:first-child {
+    margin-top: 0;
+}
+
+.legal p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 14px;
+}
+
+.legal ul {
+    margin: 0 0 14px 22px;
+}
+
+.legal li {
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .85);
+    margin-bottom: 6px;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.legal strong {
+    font-weight: 700;
+}
+
+@media all and (max-width: 650px) {
+    .legal {
+        padding: 50px 0 70px;
+    }
+
+    .legal h1 {
+        font-size: 26px;
+    }
+}

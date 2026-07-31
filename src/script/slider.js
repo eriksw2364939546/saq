@@ -43,8 +43,6 @@ function Slider () {
             disableOnInteraction: true,
         }
       });
-
-      swiper()
 }
 
 export default Slider

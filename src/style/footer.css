@@ -1,36 +1,156 @@
-footer{
+footer {
     width: 100%;
-    padding: 10px;
     line-height: 67px;
-    background: rgba(0, 0, 0, 0.097);
+    background: #fff;
 }
 
-footer a{
-    font-size: 25px;
-    color: brown;
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-footer p{
-    font-size: 20px;
-    color: brown;
+.footer__logo img {
+    max-height: 54px;
+    width: auto;
+    display: block;
+}
+
+.footer__nav-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 28px;
+    line-height: normal;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.footer__nav-row a {
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    transition: color .2s ease;
+}
+
+.footer__nav-row a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .25s ease;
+}
+
+.footer__nav-row a:hover {
+    color: #555;
+}
+
+.footer__nav-row a:hover::after {
+    width: 100%;
+}
+
+.footer__legal-row {
+    justify-content: center;
+    gap: 24px;
+    line-height: normal;
+    margin: 20px 0;
+}
+
+.footer__legal-row a {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .55);
+    position: relative;
+    transition: color .2s ease;
+}
+
+.footer__legal-row a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .25s ease;
+}
+
+.footer__legal-row a:hover {
+    color: #000;
+}
+
+.footer__legal-row a:hover::after {
+    width: 100%;
+}
+
+footer a {
+    font-size: 17px;
+    color: #000;
+}
+
+footer p {
+    font-size: 17px;
+    color: #000;
 
 }
 
-@media all and (max-width: 650px){
-    footer .row{
+.footer__email-blink {
+    animation: footer-email-blink 1.2s ease-in-out infinite;
+}
+
+@keyframes footer-email-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    footer .row {
         flex-direction: column;
     }
 
-    footer a{
+    footer a {
+        font-size: 18px;
+        color: #000;
+    }
+
+
+    footer p {
+        font-size: 18px;
+        color: #000;
+    }
+
+
+}
+
+@media all and (max-width: 650px) {
+    footer .row {
+        flex-direction: column;
+    }
+
+    footer a {
         font-size: 20px;
-        color: brown;
+        color: #000;
     }
 }
 
-@media all and (max-width: 400px){
-    footer a{
+@media all and (max-width: 400px) {
+    footer a {
         font-size: 16px;
-        color: brown;
+        color: #000;
+    }
+
+
+    footer p {
+        font-size: 16px;
+        color: #000;
     }
 
 }
