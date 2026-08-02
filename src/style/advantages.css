@@ -13,10 +13,17 @@
 }
 
 .advantages__item p {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 /* ______________________________ADAPTIVE________________________ */
+
+@media all and (max-width: 823px) {
+
+    .advantages__item p {
+        font-size: 16px;
+    }
+}
 
 
 @media all and (max-width: 720px) {
